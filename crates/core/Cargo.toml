@@ -1,0 +1,19 @@
+[package]
+name = "core"
+version.workspace = true
+edition.workspace = true
+
+[lib]
+name = "core"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+log.workspace = true
+jni.workspace = true
+ctor.workspace = true
+android_logger.workspace = true
+loader = { path = "../loader" }
+obf = { path = "../obf" }
+
+[target.'cfg(target_os = "android")'.dependencies]
+android-mem-kit.workspace = true

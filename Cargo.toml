@@ -1,0 +1,26 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/core",
+    "crates/loader",
+    "crates/mods",
+    "crates/script",
+    "crates/obf",
+    "crates/cpp",
+]
+
+[workspace.package]
+version = "0.0.1"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/noodulew/noodule"
+
+[workspace.dependencies]
+log = "0.4"
+jni = "0.22"
+ctor = "0.2"
+obfstr = "0.4"
+android_logger = "0.13"
+android-mem-kit = "0.1.0"
+android_xdl = "0.0.5"
+cc = "1.0"

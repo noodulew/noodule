@@ -1,0 +1,4 @@
+[package]
+name = "mods"
+version.workspace = true
+edition.workspace = true

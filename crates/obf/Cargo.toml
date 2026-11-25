@@ -1,0 +1,7 @@
+[package]
+name = "obf"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+obfstr.workspace = true
